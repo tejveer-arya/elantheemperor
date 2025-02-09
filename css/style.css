@@ -13072,6 +13072,9 @@ Navbar Area CSS
   margin-left: 0;
   margin-right: 0;
 }
+.navbar .navbar-brand img{
+  width: 100px;
+}
 .navbar .search-form {
   margin-left: 35px;
   position: relative;
