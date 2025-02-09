@@ -186,7 +186,7 @@
     var SwiperTraveler = new Swiper(".testimonial-slider", {
         loop: true,
         spaceBetween: 25,
-        centeredSlides: true,
+        // centeredSlides: true,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
@@ -204,10 +204,10 @@
             },
             992: {
                 slidesPerView: 2,
-                centeredSlides: false,
+                // centeredSlides: false,
             },
             1200: {
-                slidesPerView: 2
+                slidesPerView: 3
             },
         }
     });

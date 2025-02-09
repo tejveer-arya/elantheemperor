@@ -15868,9 +15868,9 @@ Testimonial Area CSS
   margin-right: 0;
 }
 
-.testimonial-slider {
+/* .testimonial-slider {
   overflow: unset;
-}
+} */
 .testimonial-slider .swiper-slide.swiper-slide-active .testimonial-card {
   background-color: #245c87;
 }
@@ -21226,10 +21226,12 @@ RRE Review Area CSS
   text-align: center;
   position: relative;
 }
-.rre-review-content .default-btn{position: absolute;top:50%;transform: translateY(-50%);left:10px;right:10px;width: 220px;
-  margin: 0 auto;}
+/* .rre-review-content .default-btn{position: absolute;top:50%;transform: translateY(-50%);left:10px;right:10px;width: 220px;
+  margin: 0 auto;} */
+  .rre-review-content .default-btn{position: static;top:auto;transform: none;left:10px;right:10px;width: 220px;
+    margin: 10px 0 auto;}
 .floor-plan-item img {
-  filter: blur(3px);
+  filter: blur(0px);
 }
 .rre-review-content .trust-pilot {
   margin-bottom: 22px;
@@ -21370,6 +21372,7 @@ RRE Review Area CSS
 .rre-about-area .row div[class*='col-']:last-child{
   background-color: #245c87;
 }
+.rre-about-area .row div[class*='col-']:first-child .about-content .highlights{display: none;}
 .rre-about-area .about-content ul{
   list-style: none;
   padding: 0;
@@ -23038,8 +23041,12 @@ background-color: #245c87;
 }
 .modal-box .modal.show{display:block}
 .modal-box .modal.show:before{position:fixed;content:'';left:0;right:0;top:0;bottom:0;background-color:rgba(0,0,0,0.5);}
+.call-info{display: none;}
 
 @media (max-width: 767.98px) {
+  .top-header-area{display: none;}
+  .call-info{display: block;}
+  .call-info a{font-size: 30px;margin-right:25px}
   .video-wrap video{height: auto;}
 .rre-banner-content h2, .rre-banner-content .h2{
   font-size: 24px;
@@ -23051,9 +23058,19 @@ background-color: #245c87;
 }
 .container-box{position: relative;}
 .about-content{padding-top: 30px!important;}
+.rre-buy-sell-card:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
 .rre-why-choose-card ul li, .info ul li{position: relative;padding-left: 25px;}
 .rre-why-choose-card ul li i, .info ul li i{position: absolute;left:0}
 .rre-review-content{margin-bottom: 15px;}
+.rre-buy-sell-card .content p{font-size: 16px;}
 }
 /* End "Residential Real Estate Demo" & "Development Real Estate Demo" Style CSS
 =====================================================================================*/

@@ -1552,6 +1552,9 @@
     padding: 20px;
     margin-left: 0;
   }
+  .rre-buy-sell-card .content p {
+    font-size: 16px;
+}
   /* End "Residential Real Estate Demo" & "Development Real Estate Demo" Style Responsive
   =========================================================================================*/
 }
@@ -2216,6 +2219,17 @@
   }
   /* End "Residential Real Estate Demo" & "Development Real Estate Demo" Style Responsive
   =========================================================================================*/
+}
+@media (max-width: 991.98px) {
+.rre-about-area .row div[class*='col-']:last-child{display: none;}
+.rre-about-area .row div[class*='col-']:first-child{background-color: #245c87;}
+.rre-about-area .row div[class*='col-']:first-child .about-content ul li{font-size: 16px;}
+.rre-about-area .row div[class*='col-']:first-child .about-content ul li i {
+  color: #10b0b9;
+}
+.rre-about-area .row div[class*='col-']:first-child .info h3{color: #ffffff;margin-bottom: 15px;font-size: 30px;}
+.rre-about-area .row div[class*='col-']:first-child .about-content .highlights{display: block;}
+.rre-video-area{padding-top: 210px;padding-bottom: 210px;}
 }
 /* Min width 992px to Max width 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
