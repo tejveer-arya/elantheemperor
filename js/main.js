@@ -490,7 +490,7 @@
     // RRE Review Swiper JS
     var SwiperTraveler = new Swiper(".rre-review-slider", {
         loop: true,
-        spaceBetween: 40,
+        spaceBetween: 20,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
@@ -633,3 +633,16 @@ document.querySelectorAll('.btn-close').forEach(button => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".responsive-navbar .offcanvas-body .navbar-nav .nav-item a");
+    const offcanvasElement = document.getElementById("navbarOffcanvas");
+    const offcanvasInstance = new bootstrap.Offcanvas(offcanvasElement);
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            offcanvasInstance.hide(); 
+        });
+    });
+});
+
