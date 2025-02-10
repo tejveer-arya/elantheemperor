@@ -2815,6 +2815,7 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
   .rre-buy-sell-card .elan{height: 650px;object-fit: cover;}
+  .rre-why-choose-area .rre-why-choose-content{margin-bottom: 0px;}
 }
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
