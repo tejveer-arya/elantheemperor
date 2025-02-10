@@ -16457,7 +16457,7 @@ About Area CSS
 .about-content {
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-right: 65px;
+  padding-right: 20px;
 }
 .about-content .sub {
   display: inline-flex;
@@ -20184,6 +20184,7 @@ Footer Area CSS
 .single-footer-widget .widget-logo {
   margin-bottom: 25px;
 }
+.single-footer-widget .widget-logo img{width:100px}
 .single-footer-widget p {
   color: #DAE8F0;
   margin-bottom: 0;
@@ -20210,13 +20211,16 @@ Footer Area CSS
 }
 .single-footer-widget h3, .single-footer-widget .h3 {
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #ffffff;
   font-weight: 600;
 }
 .single-footer-widget .custom-links {
   padding-left: 0;
   margin-bottom: 0;
+  display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 .single-footer-widget .custom-links li {
   list-style-type: none;
@@ -20274,7 +20278,7 @@ Footer Area CSS
 
 .copyright-area {
   border-top: 1px solid rgb(255 255 255 / 30%);
-  margin-top: 95px;
+  margin-top: 25px;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -20624,6 +20628,9 @@ RRE Banner Area Area CSS
   z-index: 1;
   overflow: hidden;
   padding-top: 100px;
+  margin: 0 40px;
+  border-radius: 50px;
+  height: 100vh;
 }
 .rre-banner-area::before {
   position: absolute;
@@ -20644,7 +20651,7 @@ RRE Banner Area Area CSS
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 0px;
   background-color: #F0F6F7;
   z-index: -1;
 }
@@ -20653,6 +20660,11 @@ RRE Banner Area Area CSS
   text-align: center;
   max-width: 1075px;
   margin: 0 auto 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 920px;
 }
 .rre-banner-content h2, .rre-banner-content .h2 {
   font-size: 45px;
@@ -20660,6 +20672,7 @@ RRE Banner Area Area CSS
   color: #ffffff;
 }
 .rre-banner-content h2 span{display: block;}
+.rre-banner-content .title h3{color: #ffffff;font-size: 38px;padding:20px 0}
 
 .rre-banner-image {
   position: relative;
@@ -20686,6 +20699,28 @@ RRE Banner Area Area CSS
   background: linear-gradient(180deg, rgba(2, 0, 0, 0) 64.3%, rgba(2, 0, 0, 0.5) 88.53%);
   border-radius: 3.5px;
 }
+.image-anime{
+	position: relative;
+	overflow: hidden;
+}
+
+.image-anime:after{
+	content: "";
+	position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255,255,255,.3);
+    transform: translate(-50%,-50%) rotate(-45deg);
+    z-index: 1;
+}
+
+.image-anime:hover:after {
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+}
 .rre-banner-image .content {
   display: flex;
   align-items: end;
@@ -20697,6 +20732,9 @@ RRE Banner Area Area CSS
   width: 100%;
   padding: 50px;
 }
+.rre-blog-area{height: 100%;}
+.rre-blog-area .row{height: 100%;}
+.rre-blog-area .row div[class*='col-'] .row{height: 100%;}
 .rre-banner-image .content .title {
   margin-right: 30px;
 }
@@ -21094,7 +21132,7 @@ RRE Why Choose Area CSS
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.7px;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 .rre-why-choose-content h2, .rre-why-choose-content .h2 {
   font-size: 40px;
@@ -21226,10 +21264,10 @@ RRE Review Area CSS
   text-align: center;
   position: relative;
 }
-/* .rre-review-content .default-btn{position: absolute;top:50%;transform: translateY(-50%);left:10px;right:10px;width: 220px;
-  margin: 0 auto;} */
-  .rre-review-content .default-btn{position: static;top:auto;transform: none;left:10px;right:10px;width: 220px;
-    margin: 10px 0 auto;}
+.rre-review-content .default-btn{position: absolute;top:50%;transform: translateY(-50%);left:10px;right:10px;width: 220px;
+  margin: 0 auto;}
+  /* .rre-review-content .default-btn{position: static;top:auto;transform: none;left:10px;right:10px;width: 220px;
+    margin: 10px 0 auto;} */
 .floor-plan-item img {
   filter: blur(0px);
 }
@@ -21378,8 +21416,18 @@ RRE Review Area CSS
   padding: 0;
   margin: 0;
 }
-.rre-about-area .about-content ul li{padding-bottom: 5px;color: #ffffff;}
-.rre-about-area .about-content ul li i{color:#ffffff;margin-right: 5px;}
+.rre-about-area .about-content ul li{
+  padding-bottom: 5px;
+  color: #000000;
+  background: #fff;
+  padding: .75rem .75rem .75rem 2rem;
+  position: relative;
+  border-radius: 1rem;
+  width: calc(100% - 0rem);
+  margin-bottom: 15px;
+  box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);}
+.rre-about-area .about-content ul li i{color:#000000;margin-right: 5px;position: absolute;left: 10px;}
+.rre-about-area .about-content h3{color: #f1f0eb;}
 .rre-review-card .rating li.gray i {
   color: #B4B7C9;
 }
