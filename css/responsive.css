@@ -1557,6 +1557,8 @@
   .rre-buy-sell-card .content p {
     font-size: 16px;
 }
+.rre-banner-area .others-option{flex-direction: column;gap: 10px;}
+.top-header-call-info .others-option{padding: 15px 12px!important};
   /* End "Residential Real Estate Demo" & "Development Real Estate Demo" Style Responsive
   =========================================================================================*/
 }
