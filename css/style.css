@@ -21882,7 +21882,18 @@ DRE Banner Area CSS
   background-repeat: no-repeat;
   z-index: -1;
 }
-
+.rre-why-choose-area .rre-why-choose-card .contact-form{
+  background: #ffffff;
+  padding: .75rem;
+  position: relative;
+  border-radius: 1rem;
+  margin-bottom: 15px;
+  box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+.rre-why-choose-area .rre-why-choose-card .contact-form .form-group button{background-color: #10b0b9;
+  border-radius: 3.5px;
+  color: #020000;}
+.rre-why-choose-area .rre-why-choose-card .contact-form .form-group button:hover, .rre-why-choose-area .rre-why-choose-card .contact-form .form-group button:focus{background-color: #245c87;}
 .dre-banner-search-tabs .nav {
   display: flex;
   align-items: center;
