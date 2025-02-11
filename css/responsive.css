@@ -1559,6 +1559,7 @@
 }
 .rre-banner-area .others-option{flex-direction: column;gap: 10px;}
 .top-header-call-info .others-option{padding: 15px 12px!important};
+.rre-blog-card {margin-bottom: 0px;}
   /* End "Residential Real Estate Demo" & "Development Real Estate Demo" Style Responsive
   =========================================================================================*/
 }

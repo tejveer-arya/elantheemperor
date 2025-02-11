@@ -20621,7 +20621,7 @@ Pagination Area CSS
 RRE Banner Area Area CSS
 =================================================*/
 .rre-banner-area {
-  background-image: url(../images/elan-imperial.jpg);
+  background-image: url(../images/elan-imperial.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -20734,8 +20734,38 @@ RRE Banner Area Area CSS
   padding: 50px;
 }
 .rre-blog-area{height: 100%;}
-.rre-blog-area .row{height: 100%;}
+.rre-blog-area .row{height: 100%;align-items: center;}
 .rre-blog-area .row div[class*='col-'] .row{height: 100%;}
+.rre-blog-area ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.rre-blog-area ul li{display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fff;
+    padding: .75rem;
+    border-radius: 1rem;
+    width: calc(100% - 2rem);
+    margin-bottom:12px;
+    color:#000000;
+    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+.rre-blog-area ul li i{ 
+  font-size: 1rem;
+  font-weight: 700;
+    width: 2em;
+    height: 2em;
+    background: rgba(0, 0, 0, 0);
+    flex: 0 0 auto;
+    border-radius: 50%;
+    color: #000;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .rre-banner-image .content .title {
   margin-right: 30px;
 }
@@ -21568,7 +21598,7 @@ Agents Area CSS
 RRE Blog Area CSS
 =================================================*/
 .rre-blog-card {
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 .rre-blog-card .blog-image {
   overflow: hidden;
